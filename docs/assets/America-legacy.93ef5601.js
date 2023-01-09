@@ -1,0 +1,1 @@
+System.register(["./index-legacy.54e39703.js"],(function(e,t){"use strict";var n,s,r,c,u,i,o;return{setters:[e=>{n=e.S,s=e.i,r=e.s,c=e.e,u=e.a,i=e.n,o=e.d}],execute:function(){function t(e){let t;return{c(){t=c("h2"),t.textContent="America"},m(e,n){u(e,t,n)},p:i,i:i,o:i,d(e){e&&o(t)}}}e("default",class extends n{constructor(e){super(),s(this,e,null,t,r,{})}})}}}));

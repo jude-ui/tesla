@@ -18,10 +18,15 @@
     "svelte": "^3.52.0",
     "svelte-preprocess": "^4.10.7",
     "svelte-spa-router": "^3.3.0",
+    "terser": "^5.16.1",
     "vite": "^3.2.3"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "dependencies": {
+    "chart.js": "^4.0.1",
+    "svelte-chartjs": "^3.1.0"
+  }
 }

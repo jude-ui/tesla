@@ -1,0 +1,1 @@
+System.register(["./index-legacy.54e39703.js"],(function(e,t){"use strict";var n,s,r,u,c,i,o;return{setters:[e=>{n=e.S,s=e.i,r=e.s,u=e.e,c=e.a,i=e.n,o=e.d}],execute:function(){function t(e){let t;return{c(){t=u("h2"),t.textContent="Sage"},m(e,n){c(e,t,n)},p:i,i:i,o:i,d(e){e&&o(t)}}}e("default",class extends n{constructor(e){super(),s(this,e,null,t,r,{})}})}}}));

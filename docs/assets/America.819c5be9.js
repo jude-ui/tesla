@@ -1,0 +1,1 @@
+import{S as o,i as r,s as i,e as c,a as l,n as a,d as m}from"./index.47b836ea.js";function u(n){let e;return{c(){e=c("h2"),e.textContent="America"},m(t,s){l(t,e,s)},p:a,i:a,o:a,d(t){t&&m(e)}}}class p extends o{constructor(e){super(),r(this,e,null,u,i,{})}}export{p as default};

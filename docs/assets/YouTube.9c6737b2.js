@@ -1,0 +1,1 @@
+import{S as o,i as r,s as u,e as i,a as c,n,d as l}from"./index.47b836ea.js";function f(s){let e;return{c(){e=i("h2"),e.textContent="YouTube"},m(t,a){c(t,e,a)},p:n,i:n,o:n,d(t){t&&l(e)}}}class p extends o{constructor(e){super(),r(this,e,null,f,u,{})}}export{p as default};

@@ -29,4 +29,28 @@ main{display:block}
 
 @import './variable';
 
-#app{ display: flex;flex-direction: column;padding: 20px;color: $color-blue }
+#app{display: flex;flex-direction: column;position: relative; padding:($h-menu + $header-y*2) $layout-x 10px}
+
+header{position: fixed;top:0;left:0;right:0;padding:$header-y $layout-x;text-align: center;backdrop-filter: blur(10px)}
+header h1{position: absolute;top: $header-y;left:$layout-x;font-size: 22px;line-height: $h-menu}
+header nav{display: inline-block;vertical-align: top;}
+header:hover{background-color: rgba(140, 140, 140, 0.3)}
+header:hover .list_submenu{max-height: 500px;padding-bottom:10px;opacity: 1;transition: all 1s ease}
+.list_menu{overflow: hidden;text-align: left;}
+.list_menu > li{float: left;position: relative;min-width: 120px;}
+.list_menu > li + li{margin-left: 14px}
+.list_menu .link_menu{display: block; font-size: 17px;line-height: $h-menu}
+.list_menu .link_menu.active{color: $color-blue}
+.list_submenu{overflow: hidden;max-height: 0;opacity: 0}
+.list_submenu .link_sub{display: block;padding:3px 0;font-size: 14px;line-height: 18px;}
+.list_submenu .link_sub.active{color: $color-blue}
+
+.wrap_chart{max-width: 1000px;width:100%;margin:0 auto;padding-top:20px}
+.wrap_chart + .wrap_chart{margin-top:100px}
+.wrap_chart canvas{width:100% !important;height:auto !important}
+
+.group_radio{padding: 10px 0}
+.group_radio .lab_view{font-size: 12px;font-weight: 500; color: #000}
+.group_radio .lab_view + .lab_view{margin-left:10px}
+
+.group_select select{font-size: 14px;}

@@ -1,18 +1,34 @@
 <script>
-  import { link, push, pop } from "svelte-spa-router";
+  import { link, location } from "svelte-spa-router";
   import active from "svelte-spa-router/active";
+  import navLists from '@/js/navLists';
+
+  let currentPath = '';
+  $: if ($location) currentPath = `/${$location.split('/')[1]}`;
 </script>
 
 <header>
-  <h2>Header</h2>
-  <div class="inner_head">
-    <a
-      href="/"
-      use:link
-      use:active>
-      Main
-    </a>
-  </div>
+  <h1 class="tit_tesla">Tesla Fan Page</h1>
+  <nav>
+    <ul class="list_menu">
+      {#each navLists as menu (menu.name)}
+        <li>
+          <a href={menu.path} use:link class="link_menu" class:active={currentPath === menu.path}>
+            { menu.name }
+          </a>
+          <ul class="list_submenu">
+            {#each menu.subMenuLists as subMenu (subMenu.name)}
+            <li>
+              <a href={subMenu.path} use:link use:active class="link_sub">
+                { subMenu.name }
+              </a>
+            </li>
+            {/each}
+          </ul>
+        </li>
+      {/each}
+    </ul>
+  </nav>
 </header>
 
 <!-- <div class="wrap_btn">
